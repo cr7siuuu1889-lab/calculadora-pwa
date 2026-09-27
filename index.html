@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101114">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Calculadora</title>
+</head>
+<body>
+<main class="app">
+  <header><h1>Calculadora</h1><button id="install" hidden>Instalar</button></header>
+  <section class="screen">
+    <div id="expression"></div>
+    <div id="display">0</div>
+  </section>
+  <section class="keys">
+    <button data-action="clear">AC</button><button data-action="percent">%</button><button data-action="sign">±</button><button class="op" data-value="÷">÷</button>
+    <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button class="op" data-value="×">×</button>
+    <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button class="op" data-value="−">−</button>
+    <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button class="op" data-value="+">+</button>
+    <button data-value=".">.</button><button data-value="0">0</button><button data-action="back">⌫</button><button class="op equal" data-action="equal">=</button>
+  </section>
+  <button id="historyBtn" class="historyBtn">Ver historial</button>
+</main>
+<div id="history" class="modal hidden"><div class="modalbox"><h2>Historial</h2><div id="historyList"></div><button id="closeHistory">Cerrar</button><button id="clearHistory">Borrar historial</button></div></div>
+<script src="app.js"></script>
+</body>
+</html>
